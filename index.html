@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <a href="#" class="logo">Movie App</a>
+            <ul class="nav" id="nav">
+                <li><a href="#"><i class="ri-home-4-line"></i>Home</a></li>
+                <li><a href="#"><i class="ri-folder-open-line"></i>Genre</a></li>
+                <li><a href="#"><i class="ri-film-line"></i>Movies</a></li>
+                <li><a href="#"><i class="ri-tv-line"></i>Series</a></li>
+                <li><a href="#"><i class="ri-question-line"></i>About</a></li>
+            </ul>
+            <span><a href="#" class="sign-in">Sign in</a></span>
+        </div>
+        <div class="hero-section">
+            <div class="hero-img">
+                <img src="hero.jpeg" alt="">
+            </div>
+            <div class="hero-text">
+                <div class="hero-title">Parasite</div>
+                <div class="hero-sub">
+                    <div class="star">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-half-fill"></i></span>
+                    </div>
+                    <div class="score">8.6/10(imdb)</div>
+                    <div class="grade">15+</div>
+                </div>
+                <div class="hero-desc">
+                    <p>Greed and class discrimination threaten the newly formed symbiotic relationship between the
+                        wealthy Park family and the destitute Kim clan.
+                    </p>
+                </div>
+                <div class="genre">
+                    <span>Comedy</span>
+                    <span>Drama</span>
+                    <span>Thriller</span>
+                </div>
+                <div class="hero-btn"><i class="ri-play-circle-line"></i>Play Now</div>
+            </div>
+        </div>
+        <form id="form">
+            <input type="text" autocomplete="off" placeholder="Search" id="search" class="search">
+        </form>
+        <main id="main">
+            <div class="movie">
+                <img src="singstreet.jpg" alt="image">
+
+                <div class="movie-info">
+                    <h3>Sing Street</h3>
+                    <span class="heart"><i class="ri-heart-line"></i></span>
+                </div>
+
+                <div class="overview">
+                    <h3>overview:</h3>
+                    Sing Street is an Irish musical comedy-drama film directed by John Carney and released in 2016.
+                    The
+                    story takes place in Dublin, in the 1980's. It relates the life of a young teenager who is
+                    called
+                    Connor
+                    Lawlor. His parents are a bit short of money and they choose to find another high school.
+                </div>
+            </div>
+        </main>
+        <div class="drama-zone">
+            <div class="drama-title">DRAMA</div>
+            <div class="drama-container">
+                <div class="drama">
+                    <img src="singstreet.jpg" alt="image">
+                    <div class="drama-info">
+                        <h3>drama title</h3>
+                        <span class="vote">9.2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="left-btn"><i class="ri-arrow-left-s-line"></i></div>
+            <div class="right-btn"><i class="ri-arrow-right-s-line"></i></div>
+        </div>
+        <div class="highest-drama-zone">
+            <div class="highest-title">Highest Rated DRAMA</div>
+            <div class="highest-rated-movies">
+                <div class="highest">
+                    <img src="singstreet.jpg" alt="image">
+                    <div class="highest-info">
+                        <h3>drama title</h3>
+                        <span class="vote">9.2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="left-btn"><i class="ri-arrow-left-s-line"></i></div>
+            <div class="right-btn"><i class="ri-arrow-right-s-line"></i></div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
