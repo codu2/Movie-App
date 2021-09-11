@@ -127,3 +127,16 @@ function showHighest(highestMovies) {
 
     highestMovie.innerHTML = html;
 }
+
+const signUpBtn = document.querySelector('.sign-up-button');
+const signUp = document.querySelector('.sign-up');
+const signInBtn = document.querySelector('.sign-in-button');
+const signIn = document.querySelector('.sign-in');
+
+signUpBtn.addEventListener('click', () => {
+  signUp.classList.add('active');
+})
+
+signInBtn.addEventListener('click', () => {
+  signUp.classList.remove('active');
+})
