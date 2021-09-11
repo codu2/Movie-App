@@ -336,6 +336,177 @@ main {
     opacity: 1;
 }
 
+// sign-in, sign-up area css code
+#sign-in a, #sign-up a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#sign-in a:hover, #sign-up a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#sign-in,
+#sign-up {
+  width: 400px;
+  height: 550px;
+  background: #000;
+  color: #fff;
+  border-radius: 1.5rem;
+  padding: 1rem 1.5rem;
+  background-image: url('https://www.moma.org/d/assets/W1siZiIsIjIwMTkvMTAvMjMvMTZkMWs5aGd2d19QYXJhc2l0ZS5qcGciXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgOTAgLXJlc2l6ZSAyMDAweDIwMDBcdTAwM2UiXV0/Parasite.jpg?sha=ae64e79e13422a3f');
+  background-position: 40% center;
+  background-size: cover;
+  position: absolute;
+}
+
+.sign-up {
+  top: 120%;
+  transition: all .5s linear;
+}
+
+.sign-up.active {
+  top: 0;
+}
+
+.sign-in-header,
+.sign-up-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.header-icon i {
+  font-size: 2rem;
+}
+
+.header-title h3 {
+  font-size: 2rem;
+  margin-bottom: 1.3rem;
+  font-weight: 600;
+}
+
+.header-txt p {
+  font-size: .9rem;
+  word-break: keep-all;
+  text-align: center;
+}
+
+.sign-in-main {
+  margin: 3em 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in-main div {
+  margin-bottom: 1rem;
+  border: .1rem solid #fff;
+  padding: .7rem 0;
+  border-radius: 2rem;
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: transparent;
+  font-weight: 600;
+  font-size: .9rem;
+  cursor: pointer;
+}
+
+.sign-in-main div:hover {
+  background: linear-gradient( 111.5deg, rgba(228,247,255,1) 21.9%, rgba(255,216,194,1) 92.2% );
+  color: #333;
+}
+
+.sign-in-main div i {
+  margin-left: 5px;
+}
+
+.sign-in-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.sign-up-main {
+  margin: 1.3rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up-main label {
+  margin-top: 1rem;
+}
+
+.sign-up-main input {
+  border: none;
+  background: transparent;
+  border-bottom: .1rem solid #f0f0f0;
+  padding: .5rem .7rem;
+  outline: none;
+  color: #fff;
+  font-family: inherit;
+}
+
+.sign-up-main input::placeholder {
+  font-family: inherit;
+  color: #999;
+}
+  
+.sign-up-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: .7rem;
+}
+
+.sign-up-footer button {
+  border: .1rem solid #fff;
+  background: transparent;
+  padding: .5rem 0;
+  width: 100px;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: .9rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sign-up-footer button:hover {
+ background: linear-gradient( 111.5deg, rgba(228,247,255,1) 21.9%, rgba(255,216,194,1) 92.2% );
+  color: #333;
+}
+
+.sign-in-link p {
+  font-size: .8rem;
+  margin-bottom: .7rem;
+}
+
+.sign-in-link a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 992px) {
     .nav {
         display: none;
