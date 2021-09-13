@@ -235,57 +235,58 @@ main {
   justify-content: center;
 }
 
-.movie:hover .overview {
-  bottom: 0;
-}
-
-.slide-container {
-  position: relative;
+.slide-container1,
+.slide-container2 {
   width: 100%;
+  margin: 2rem 0;
+  margin-left: 2rem;
 }
 
 .drama-zone,
 .highest-drama-zone {
-  position: relative;
-  width: 100%;
-}
-
-.highest-drama-zone {
-  top: 300px;
-}
-
-.drama-title,
-.highest-title {
-  margin-left: 2rem;
-  font-size: 1.7rem;
-  font-weight: 600;
-  position: absolute;
-}
-
-.drama-container,
-.highest-rated-movies {
-  display: flex;
-  overflow: hidden;
-  margin: 2rem;
-  gap: 1rem;
-  /*width: 13333px;*/
-  width: 200%;
-  pointer-events: none;
-  position: absolute;
-  top: 20px;
-  left: 0;
-}
-
-.drama,
-.highest {
-  position: relative;
-  cursor: pointer;
-}
-
-.drama img,
-.highest img {
-  width: 133.33px;
+  width: 90%;
   height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.drama-container {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(18, 1fr);
+  width: calc(133.33px * 18 + 6rem);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.highest-rated-drama {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(20, 1fr);
+  width: calc(133.33px * 20 + 6rem);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.drama-container .drama,
+.highest-rated-drama .highest {
+  width: 133.33px;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.drama-container .drama img,
+.highest-rated-drama .highest img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -296,6 +297,13 @@ main {
   bottom: 10px;
   transform: translateY(120%);
   transition: all 0.4s linear;
+}
+
+.drama-title,
+.highest-title {
+  margin-bottom: 0.7rem;
+  font-size: 1.7rem;
+  font-weight: 600;
 }
 
 .drama-info h3,
@@ -344,6 +352,17 @@ main {
   display: flex;
 }
 
+.sign-close {
+  position: absolute;
+  top: 100px;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.sign-close i {
+  font-size: 2rem;
+}
+
 #sign-in,
 #sign-up {
   width: 400px;
@@ -356,6 +375,7 @@ main {
   background-position: 40% center;
   background-size: cover;
   position: absolute;
+  top: 20%;
 }
 
 #sign-up {
@@ -364,7 +384,7 @@ main {
 }
 
 #sign-up.active {
-  top: 80.5px;
+  top: 20%;
 }
 
 .sign-in-header,
